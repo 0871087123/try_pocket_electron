@@ -1,0 +1,23 @@
+{
+  "name": "pocket",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . --platform=win32 --overwrite --arch=x64 --out=./dist --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/ --download.mirrorOptions.customDir=13.1.1"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Kent",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "electron": "^13.1.1",
+    "electron-packager": "^15.2.0"
+  }
+}
