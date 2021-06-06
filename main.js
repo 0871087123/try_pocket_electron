@@ -12,6 +12,12 @@ function createWindow () {
   // and load the index.html of the app.
 //  mainWindow.loadURL('https://getpocket.com/')
   mainWindow.loadURL('https://getpocket.com/my-list')
+  
+  mainWindow.webContents.session.setProxy({
+	  proxyRules: 'http=http://localhost:10080;https=http://localhost:10080'
+  }, function () {
+    console.log('代理设置完毕')
+  })
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
